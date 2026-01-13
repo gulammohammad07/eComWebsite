@@ -1,0 +1,125 @@
+/* Product Grid */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Name */
+.product-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #222;
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  max-width: 180px;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* --- PRICE SECTION UPDATES --- */
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 18px; /* Slightly larger for emphasis */
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+.original-price {
+  font-size: 13px;
+  color: #9ca3af;
+  text-decoration: line-through; /* Strikethrough effect */
+}
+
+.discount-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #16a34a; /* Green text */
+  background: #f0fdf4; /* Very light green background */
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(22, 163, 74, 0.2);
+}
+
+/* --- END PRICE SECTION --- */
+
+/* Text Details */
+.product-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #555;
+  text-align: center;
+}
+
+.size,
+.gender {
+  font-weight: 500;
+}
+
+
+
+.fabric {
+  font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.desc {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+/* Button */
+.product-card button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1a73e8, #0f5bd6);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.product-card button:hover {
+  background: linear-gradient(135deg, #0f5bd6, #0b49b5);
+  transform: scale(1.03);
+}

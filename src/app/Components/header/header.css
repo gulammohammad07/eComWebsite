@@ -1,0 +1,191 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 14px 40px;
+  background: #ffffff;
+  border-bottom: 2px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* NAV LINKS */
+.nav a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+/* UNDERLINE EFFECT */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE LINK */
+.nav a.active-link {
+  color: #1e40af;
+  font-weight: 800;
+}
+
+.nav a.active-link::after {
+  width: 100%;
+}
+
+/* ================= SEARCH AREA ================= */
+.nav li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  position: relative;
+}
+
+/* SEARCH INPUT */
+.search {
+  padding: 9px 16px;
+  border-radius: 22px;
+  border: 1px solid #d1d5db;
+  width: 260px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.search:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* SEARCH BUTTON */
+.nav li button {
+  padding: 8px 16px;
+  border-radius: 18px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav li button:hover {
+  background: #1e40af;
+}
+
+/* ================= SUGGESTIONS DROPDOWN ================= */
+.nav li ul {
+  position: absolute;
+  top: 48px;
+  left: 26px;
+  width: 260px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  padding: 6px 0;
+  z-index: 2000;
+  max-height: 260px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+/* SUGGESTION ITEM */
+.nav li ul li {
+  padding: 10px 18px;
+  font-size: 14px;
+  color: #1f2937;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.nav li ul li:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* ACTIVE CLICK */
+.nav li ul li:active {
+  background: #dbeafe;
+}
+
+/* ================= CART ================= */
+.cartLink {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.cartLink svg {
+  transition: transform 0.3s ease;
+}
+
+.cartLink:hover svg {
+  transform: scale(1.15);
+}
+
+/* ================= FOOTER ================= */
+.footer-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 50px 60px;
+  margin-top: 60px;
+}
+
+.footer-page ul {
+  list-style: none;
+}
+
+.footer-page li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-page li strong {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.footer-page li:hover {
+  color: #60a5fa;
+}

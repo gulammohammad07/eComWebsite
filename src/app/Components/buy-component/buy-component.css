@@ -1,0 +1,224 @@
+/* Luxury Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+:root {
+    --rich-black: #0a0a0b;
+    --gold-accent: #c5a059;
+    /* Luxury Gold */
+    --silver-accent: #8e9196;
+    --glass-effect: rgba(255, 255, 255, 0.8);
+    --success-gold: #1a5d1a;
+    --soft-bg: #fdfdfd;
+}
+
+body {
+    background-color: #f4f4f6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.checkout-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    /* Form Move to Bottom */
+    gap: 50px;
+}
+
+/* --- Product Cards Section --- */
+.product-card {
+    display: flex;
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    gap: 35px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);    
+}
+
+.image-box img {
+    width: 180px;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    color: var(--rich-black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* --- Price Box (Bold & Clear) --- */
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.main-price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--rich-black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price-strike {
+    color: var(--silver-accent);
+    text-decoration: line-through;
+    font-size: 1.1rem;
+}
+
+.save-tag {
+    background: #f0fdf4;
+    color: #166534;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* --- Specs Grid (Highlighted Premium Look) --- */
+.specs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+/* Generic Highlight for all detail items (Like your Notes look) */
+.specs-grid span {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+    border-left: 5px solid var(--rich-black);
+    /* Accent border */
+    background: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+/* Individual Color Accents for different details */
+.specs-grid span:nth-child(odd) {
+    border-left-color: var(--gold-accent);
+    background: #fdfaf3;
+}
+
+.specs-grid span:nth-child(even) {
+    border-left-color: var(--rich-black);
+    background: #f8f9fa;
+}
+
+/* Special Look for Notes (Important Highlight) */
+.specs-grid span:last-child {
+    border-left-color: #d97706;
+    /* Amber border */
+    background: #fffbeb;
+    width: 100%;
+    /* Notes takes full width if needed */
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* --- Luxury Form at Bottom --- */
+.glass-form {
+    background: white;
+    padding: 50px;
+    border-radius: 32px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.glass-form h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--rich-black);
+    font-family: initial;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    font-size: 1.05rem;
+    background: #fcfcfd;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--rich-black);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* --- The Pay Button (Very Rich Look) --- */
+button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background: indianred;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover:not(:disabled) {
+    transform: scale(1.02);
+    background: #000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background: indianred;
+    cursor: not-allowed;
+}
+
+.btn-amount {
+    background: var(--gold-accent);
+    padding: 6px 16px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+}

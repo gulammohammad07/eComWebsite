@@ -1,0 +1,64 @@
+@if (orders().length) {
+<h2> Orders</h2>
+
+<div class="orders-list">
+  @for (order of orders(); track $index) {
+  <section class="order-card">
+    <div class="order-header">
+      <h3>Order #{{ orders().indexOf(order) + 1 }} <small>({{ order.orderDate ? (order.orderDate | date:'short') : '—'
+          }})</small></h3>
+      <div class="order-controls">
+        <span class="status-badge" [class.cancelled]="order.orderStatus === 'Cancelled'">{{ order.orderStatus || 'Order
+          Placed' }}</span>
+        <button (click)="onCancelOrder(orders().indexOf(order))" class="cancel-btn"
+          [disabled]="order.orderStatus === 'Cancelled'">Cancel Order</button>
+        <!-- <button (click)="onRemoveOrder(orders().indexOf(order))" class="remove-btn">Delete Order</button> -->
+      </div>
+    </div>
+
+    <div class="customer-details">
+      <h4>Customer Details</h4>
+      <div class="field"><b>Name:</b> <span>{{ order.customerDetails?.name || '—' }}</span></div>
+      <div class="field"><b>Email:</b> <span>{{ order.customerDetails?.email || '—' }}</span></div>
+      <div class="field"><b>Phone:</b> <span>{{ order.customerDetails?.phone || '—' }}</span></div>
+      <div class="field"><b>Address:</b> <span>{{ order.customerDetails?.address || '—' }}</span></div>
+      <div class="field"><b>City:</b> <span>{{ order.customerDetails?.city || '—' }}</span></div>
+      <div class="field"><b>Pincode:</b> <span>{{ order.customerDetails?.pincode || '—' }}</span></div>
+    </div>
+
+    <div class="order-summary">
+      <div class="field"><b>Total Amount:</b> <span>{{ order.amountTotal | currency:"INR":"symbol":"1.0-0" }}</span>
+      </div>
+      <div class="field"><b>Status:</b> <span>{{ order.orderStatus }}</span></div>
+    </div>
+
+    <h4>Products:</h4>
+    @if (order.products?.length) {
+    <ul>
+      @for (item of order.products; track $index) {
+      <li>
+        <div class="product-main">
+          <p class="product-name">{{ item.name }}</p>
+          <img [src]="item.image" [alt]="item.name" />
+          <p class="product-price">{{ item.price | currency:"INR":"symbol":"1.0-0" }}</p>
+        </div>
+        <div class="item-actions">
+          <button (click)="onRemoveProduct(orders().indexOf(order), item.id, order.products.indexOf(item))"
+            class="remove-btn">Remove</button>
+        </div>
+      </li>
+      }
+    </ul>
+    } @else {
+    <p>No products found in this order</p>
+    }
+  </section>
+  }
+</div>
+
+<div class="order-actions">
+  <button (click)="onClearAllOrders()" class="clear-order-btn">Clear All Orders</button>
+</div>
+} @else {
+<p>No saved orders found</p>
+}

@@ -1,0 +1,74 @@
+<div class="checkout-container">
+    <div class="products-section">
+        <ul>
+            @for (item of checkOutProducts; track $index) {
+            <li class="product-card">
+                <div class="image-box">
+                    <img [src]="item.image" [alt]="item.name">
+                </div>
+
+                <div class="product-details">
+                    <h3>{{item.name}}</h3>
+
+                    <div class="price-box">
+                        <span class="main-price">{{ item.price | currency:"INR" }}</span>
+                        @if (item.original_price) {
+                        <span class="original-price-strike">{{ item.original_price | currency:"INR" }}</span>
+                        <span class="save-tag">Save {{ (item.original_price - item.price) | currency:"INR" }}</span>
+                        }
+                    </div>
+
+                    <div class="specs-grid">
+                        @if (item.fabric) {
+                        <span><strong>Fabric:</strong> {{item.fabric}}</span>
+                        }
+
+                        @if (item.material) {
+                        <span><strong>Material:</strong> {{item.material}}</span>
+                        }
+
+                        @if (item.brand || item.brands) {
+                        <span><strong>Brand:</strong> {{ item.brand || item.brands }}</span>
+                        }
+
+                        @if (item.gender) {
+                        <span><strong>Gender:</strong> {{item.gender}}</span>
+                        }
+
+                        @if (item.specs) {
+                        <span><strong>Specs:</strong> {{item.specs}}</span>
+                        }
+
+                        @if (item.notes) {
+                        <span><strong>Notes:</strong> {{item.notes}}</span>
+                        }
+                    </div>
+
+                    @if (item.description) {
+                    <p class="description">{{item.description}}</p>
+                    }
+                </div>
+            </li>
+            }
+        </ul>
+    </div>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="onPlaceOrder()" class="glass-form">
+        <h2>Secure Checkout</h2>
+        <div class="input-group">
+            <input type="text" formControlName="name" placeholder="Full Name" required>
+            <input type="tel" formControlName="phone" placeholder="Phone Number" required>
+            <input type="text" formControlName="address" placeholder="Street Address" required>
+            <div class="row">
+                <input type="text" formControlName="city" placeholder="City" required>
+                <input type="text" formControlName="pincode" placeholder="Pincode" inputmode="numeric">
+            </div>
+            <input type="email" formControlName="email" placeholder="Email Address" required>
+        </div>
+
+        <button type="submit" [disabled]="checkoutForm.invalid">
+            <span class="btn-text">Pay Now</span>
+            <span class="btn-amount">{{ totalAmount | currency:"INR" }}</span>
+        </button>
+    </form>
+</div>

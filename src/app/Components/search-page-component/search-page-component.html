@@ -1,0 +1,17 @@
+<ul class="product-list">
+    @for (item of filteredResults; track $index) {
+    <li class="product-card">
+        <img [src]="item.image" alt="">
+        <h3>{{ item.name }}</h3>
+        <p class="price"> {{ item.price | currency:"INR"}}</p>
+        <p class="size">{{item.size}} </p>
+        <p class="size">{{item.material}} </p>
+        <button (click)="add(item)" [disabled]="item.added" [class.added]="item.added">{{ item.added ? 'Added':'Add to
+            Cart'}}
+        </button>
+    </li>
+    }
+</ul>
+
+<div *ngIf="filteredResults.length === 0">
+    <p>No products found matching your search.</p>

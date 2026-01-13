@@ -1,0 +1,202 @@
+/* ================= DARK NEON – PREMIUM MODE ================= */
+
+body.dark-neon {
+    background: radial-gradient(circle at top, #050b1e, #020617 60%, #000 100%);
+    color: #e5edff;
+    transition: background 0.6s ease, color 0.4s ease;
+}
+
+/* ===== Animated Ambient Neon Background ===== */
+body.dark-neon::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(34, 211, 238, 0.12), transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.12), transparent 50%),
+        radial-gradient(circle at 50% 85%, rgba(56, 189, 248, 0.1), transparent 55%);
+    z-index: -1;
+    animation: ambientMove 18s ease-in-out infinite;
+}
+
+@keyframes ambientMove {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-40px); }
+}
+
+/* ================= HEADER ================= */
+body.dark-neon .main-header {
+    background: rgba(2, 6, 23, 0.75);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(34, 211, 238, 0.25);
+    box-shadow: 0 8px 40px rgba(34, 211, 238, 0.25);
+}
+
+/* ================= HERO ================= */
+body.dark-neon .hero {
+    background: linear-gradient(160deg, rgba(2,6,23,0.95), rgba(0,0,0,0.95));
+    border: 1px solid rgba(34, 211, 238, 0.35);
+    box-shadow: 0 0 80px rgba(34, 211, 238, 0.35);
+}
+
+body.dark-neon .hero h1 {
+    color: #e0faff;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-shadow:
+        0 0 6px rgba(34, 211, 238, 0.6),
+        0 0 18px rgba(34, 211, 238, 0.6);
+}
+
+body.dark-neon .hero p {
+    color: #c7d2fe;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ================= CARDS ================= */
+body.dark-neon .category-card,
+body.dark-neon .product-card,
+body.dark-neon .promo-card {
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    box-shadow:
+        inset 0 0 20px rgba(34, 211, 238, 0.12),
+        0 10px 35px rgba(0, 0, 0, 0.8);
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+body.dark-neon .category-card:hover,
+body.dark-neon .product-card:hover,
+body.dark-neon .promo-card:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow:
+        inset 0 0 30px rgba(34, 211, 238, 0.25),
+        0 0 70px rgba(34, 211, 238, 0.55);
+}
+
+/* ================= TEXT (READABILITY FIX) ================= */
+body.dark-neon h2 {
+    color: #f1f5ff;
+    font-weight: 800;
+    text-shadow: 0 0 6px rgba(99, 179, 237, 0.5);
+}
+
+body.dark-neon h3 {
+    color: #e6faff;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+body.dark-neon .price {
+    color: #38f9ff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ===== ULTRA READABLE PRODUCT NAME ===== */
+
+body.dark-neon .product-card {
+    position: relative;
+}
+
+/* Solid title bar for name */
+body.dark-neon .product-card h3 {
+    color: #f8fbff;                 /* pure readable white */
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    line-height: 1.3;
+    text-align: center;
+
+    /* REAL FIX 👇 */
+    background: linear-gradient(
+        to right,
+        rgba(2, 6, 23, 0.95),
+        rgba(2, 6, 23, 0.85),
+        rgba(2, 6, 23, 0.95)
+    );
+
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin: 10px 8px 14px;
+
+    /* Minimal glow (not blur) */
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.9),
+        0 0 6px rgba(34, 211, 238, 0.4);
+
+    /* Clamp long names */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Optional: subtle neon line under name */
+body.dark-neon .product-card h3::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    margin: 6px auto 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #22d3ee,
+        transparent
+    );
+    opacity: 0.8;
+}
+
+/* ================= BUTTONS ================= */
+body.dark-neon button {
+    background: linear-gradient(135deg, #22d3ee, #6366f1);
+    color: #020617;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    border-radius: 30px;
+    transition: all 0.35s ease;
+    box-shadow:
+        0 0 12px rgba(34, 211, 238, 0.6),
+        0 0 30px rgba(99, 102, 241, 0.5);
+}
+
+body.dark-neon button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 20px rgba(34, 211, 238, 0.9),
+        0 0 55px rgba(99, 102, 241, 0.9);
+}
+
+/* ================= NEWSLETTER ================= */
+body.dark-neon .newsletter {
+    background: linear-gradient(160deg, rgba(2,6,23,0.95), rgba(0,0,0,0.95));
+    border: 1px solid rgba(34, 211, 238, 0.4);
+    box-shadow: 0 0 70px rgba(34, 211, 238, 0.6);
+}
+
+/* ================= TOGGLE BUTTON ================= */
+.theme-toggle {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 22px;
+    background: rgba(2,6,23,0.9);
+    color: #38f9ff;
+    border: 1px solid rgba(34, 211, 238, 0.5);
+    box-shadow:
+        0 0 18px rgba(34, 211, 238, 0.7),
+        0 0 45px rgba(34, 211, 238, 0.9);
+    transition: transform 0.3s ease;
+    z-index: 99999;
+}
+
+.theme-toggle:hover {
+    transform: rotate(12deg) scale(1.1);
+}

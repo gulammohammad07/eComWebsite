@@ -1,0 +1,20 @@
+<ul>
+  @for (item of ladiesFashions; track item.id) {
+  <li class="product-card">
+    <h3>{{ item.name }}</h3>
+    <img [src]="item.image" [alt]="item.name">
+    
+    <div class="price-container">
+      <span class="price">{{ item.price | currency:"INR":"symbol":"1.0-0" }}</span>
+      <span class="original-price">{{ item.original_price | currency:"INR":"symbol":"1.0-0" }}</span>
+      <span class="discount-badge">{{ item.discount_percentage }}% OFF</span>
+    </div>
+
+    <p class="fabric">Fabric: {{ item.fabric }}</p>
+    
+    <button (click)="add(item)" [disabled]="item.added" [class.added]="item.added">
+      {{ item.added ? 'Added' : 'Add to Cart' }}
+    </button>
+  </li>
+  }
+</ul>

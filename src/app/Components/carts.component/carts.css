@@ -1,0 +1,203 @@
+/* Google Fonts - Inter use karein premium feel ke liye */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --premium-black: #121212;
+    --accent-blue: #0071e3;
+    /* Apple style blue */
+    --soft-gray: #f5f5f7;
+    --border-color: #e5e7eb;
+    --danger: #f14a4a;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    margin: 40px 0;
+    text-align: center;
+    color: var(--premium-black);
+}
+
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 30px;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cart-img {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: var(--soft-gray);
+}
+
+.cart-info {
+    flex: 1;
+}
+
+.cart-info h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: var(--premium-black);
+}
+
+.cart-info p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #454442;
+    margin-bottom: 20px;
+}
+
+
+/* --- Premium Quantity Box --- */
+.quantity-box {
+    display: inline-flex;
+    font-size: 40px;
+    align-items: center;
+    background: var(--soft-gray);
+    padding: 6px 14px;
+    border-radius: 50px;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.quantity-box button {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--premium-black);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.quantity-box button:hover {
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-box span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* --- Remove Button (Subtle & Elegant) --- */
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: var(--secondary-text);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    color: #86868b;
+    transition: color 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.remove-btn:hover {
+    color: red;
+    font-size: 20px;
+}
+
+/* --- Sticky Buy Section --- */
+.buySection {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.buySection h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--premium-black);
+}
+
+.buySection button {
+    width: 250px;
+    padding: 18px 30px;
+    background-color:#808080;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    /* Capsule shape for premium look */
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 15px rgba(0, 113, 227, 0.2);
+}
+
+.buySection button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 113, 227, 0.3);
+    background-color: #0077ed;
+}
+
+.buySection button:active {
+    transform: scale(0.96);
+}
+
+/* --- Empty Cart --- */
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%) !important;
+    border-radius: 30px;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.empty p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.empty::after {
+    content: 'Your bag is empty.';
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 400;
+}

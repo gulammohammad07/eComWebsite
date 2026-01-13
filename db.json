@@ -1,0 +1,981 @@
+{
+  "fashion": [
+    {
+      "id": 1,
+      "name": "Classic White Shirt",
+      "fabric": "Cotton",
+      "original_price": 1199,
+      "discount_percentage": 65,
+      "price": 420,
+      "image": "assests/photos/fashion/Classic White Shirt.jpg",
+      "description": "Soft cotton white shirt perfect for formal and casual wear.",
+      "  ": [
+        "shirt",
+        "white shirt",
+        "cotton shirt",
+        "plain shirt",
+        "formal shirt",
+        "top",
+        "classic shirt"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Black Denim Jacket",
+      "fabric": "Denim",
+      "original_price": 2249,
+      "discount_percentage": 60,
+      "price": 900,
+      "image": "assests/photos/fashion/Black Denim Jacket.jpg",
+      "description": "Stylish black denim jacket for winter and casual outings.",
+      "  ": ["jacket", "denim jacket", "black jacket", "winter jacket", "casual jacket", "coat"]
+    },
+    {
+      "id": 3,
+      "name": "Blue Slim Fit Jeans",
+      "fabric": "Denim",
+      "original_price": 1649,
+      "discount_percentage": 68,
+      "price": 528,
+      "image": "assests/photos/fashion/Blue Slim Fit Jeans.jpg",
+      "description": "Comfortable slim-fit blue jeans suitable for everyday wear."
+    },
+    {
+      "id": 4,
+      "name": "Red Round Neck T-Shirt",
+      "fabric": "Cotton",
+      "original_price": 749,
+      "discount_percentage": 62,
+      "price": 285,
+      "image": "assests/photos/fashion/Red Round Neck T-Shirt.jpg",
+      "description": "Casual cotton T-shirt with breathable fabric."
+    },
+    {
+      "id": 5,
+      "name": "Formal Grey Trousers",
+      "fabric": "Polyester",
+      "original_price": 1349,
+      "discount_percentage": 64,
+      "price": 486,
+      "image": "assests/photos/fashion/Formal Grey Trousers.jpg",
+      "description": "Slim fit grey formal pants ideal for office wear."
+    },
+    {
+      "id": 6,
+      "name": "Navy Blue Hoodie",
+      "fabric": "Fleece",
+      "original_price": 1949,
+      "discount_percentage": 61,
+      "price": 760,
+      "image": "assests/photos/fashion/Navy Blue Hoodie.jpg",
+      "description": "Warm fleece hoodie perfect for winters."
+    },
+    {
+      "id": 7,
+      "name": "Cotton Kurta",
+      "fabric": "Cotton",
+      "original_price": 1499,
+      "discount_percentage": 69,
+      "price": 465,
+      "image": "assests/photos/fashion/Cotton Kurta.jpg",
+      "description": "Traditional cotton kurta for festivals and ethnic wear."
+    },
+    {
+      "id": 8,
+      "name": "Black Track Pants",
+      "fabric": "Polyester Blend",
+      "original_price": 1049,
+      "discount_percentage": 66,
+      "price": 357,
+      "image": "assests/photos/fashion/Black Track Pants.jpg",
+      "description": "Comfortable track pants perfect for gym and casual wear."
+    },
+    {
+      "id": 9,
+      "name": "Green Checked Shirt",
+      "fabric": "Cotton Blend",
+      "original_price": 1349,
+      "discount_percentage": 63,
+      "price": 499,
+      "image": "assests/photos/fashion/Green Checked Shirt.jpg",
+      "description": "Trendy green checked shirt with soft cotton blend."
+    },
+    {
+      "id": 10,
+      "name": "Winter Sweatshirt",
+      "fabric": "Fleece",
+      "original_price": 1799,
+      "discount_percentage": 67,
+      "price": 594,
+      "image": "assests/photos/fashion/Winter Sweatshirt.jpg",
+      "description": "Comfortable sweatshirt perfect for cold weather."
+    },
+    {
+      "id": 11,
+      "name": "Black Formal Blazer",
+      "fabric": "Polyester",
+      "original_price": 3749,
+      "discount_percentage": 70,
+      "price": 1125,
+      "image": "assests/photos/fashion/Black Formal Blazer.jpg",
+      "description": "Elegant formal blazer ideal for meetings and parties."
+    },
+    {
+      "id": 12,
+      "name": "Printed Summer Shirt",
+      "fabric": "Rayon",
+      "original_price": 1199,
+      "discount_percentage": 65,
+      "price": 420,
+      "image": "assests/photos/fashion/Printed Summer Shirt.jpg",
+      "description": "Lightweight rayon shirt suitable for summer."
+    },
+    {
+      "id": 13,
+      "name": "Beige Chinos",
+      "fabric": "Cotton Stretch",
+      "original_price": 1499,
+      "discount_percentage": 62,
+      "price": 570,
+      "image": "assests/photos/fashion/Beige Chinos.jpg",
+      "description": "Soft stretchable chinos for comfortable daily wear."
+    },
+    {
+      "id": 14,
+      "name": "Sports Jersey",
+      "fabric": "Dry-Fit",
+      "original_price": 899,
+      "discount_percentage": 68,
+      "price": 288,
+      "image": "assests/photos/fashion/Sports Jersey.jpg",
+      "description": "Breathable dry-fit sports jersey ideal for workouts."
+    },
+    {
+      "id": 15,
+      "name": "Woolen Sweater",
+      "fabric": "Wool",
+      "original_price": 2099,
+      "discount_percentage": 60,
+      "price": 840,
+      "image": "assests/photos/fashion/Woolen Sweater.jpg",
+      "description": "Warm woolen sweater for winter comfort."
+    }
+  ],
+  "accessories": [
+    {
+      "id": 1,
+      "name": "Black Leather Wallet",
+      "material": "Genuine Leather",
+      "original_price": 1349,
+      "discount_percentage": 64,
+      "price": 486,
+      "image": "assests/photos/accessories/Black Leather Wallet.jpg",
+      "description": "Slim genuine leather wallet with multiple card slots."
+    },
+    {
+      "id": 2,
+      "name": "Classic Wrist Watch",
+      "material": "Stainless Steel",
+      "original_price": 3749,
+      "discount_percentage": 69,
+      "price": 1162,
+      "image": "assests/photos/accessories/Classic Wrist Watch.jpg",
+      "description": "Elegant analog watch suitable for formal and casual wear."
+    },
+    {
+      "id": 3,
+      "name": "Brown Leather Belt",
+      "material": "Leather",
+      "original_price": 1049,
+      "discount_percentage": 61,
+      "price": 409,
+      "image": "assests/photos/accessories/Brown Leather Belt.jpg",
+      "description": "Durable leather belt perfect for daily use."
+    },
+    {
+      "id": 4,
+      "name": "Aviator Sunglasses",
+      "material": "Metal Frame",
+      "original_price": 1799,
+      "discount_percentage": 66,
+      "price": 612,
+      "image": "assests/photos/accessories/Aviator Sunglasses.jpg",
+      "description": "Stylish UV-protected aviator sunglasses."
+    },
+    {
+      "id": 5,
+      "name": "Sports Cap",
+      "material": "Cotton",
+      "original_price": 599,
+      "discount_percentage": 63,
+      "price": 222,
+      "image": "assests/photos/accessories/Sports Cap.jpg",
+      "description": "Breathable cotton cap ideal for outdoor activities."
+    },
+    {
+      "id": 6,
+      "name": "Formal Tie",
+      "material": "Silk",
+      "original_price": 899,
+      "discount_percentage": 67,
+      "price": 297,
+      "image": "assests/photos/accessories/Formal Tie.jpg",
+      "description": "Premium silk tie for formal occasions."
+    },
+    {
+      "id": 7,
+      "name": "Leather Keychain",
+      "material": "Leather",
+      "original_price": 374,
+      "discount_percentage": 60,
+      "price": 150,
+      "image": "assests/photos/accessories/Leather Keychain.jpg",
+      "description": "Compact leather keychain with strong metal ring."
+    },
+    {
+      "id": 8,
+      "name": "Canvas Backpack",
+      "material": "Canvas",
+      "original_price": 2699,
+      "discount_percentage": 65,
+      "price": 945,
+      "image": "assests/photos/accessories/Canvas Backpack.jpg",
+      "description": "Spacious canvas backpack for travel and college."
+    },
+    {
+      "id": 9,
+      "name": "Bluetooth Earbuds",
+      "material": "Plastic",
+      "original_price": 2999,
+      "discount_percentage": 62,
+      "price": 1140,
+      "image": "assests/photos/accessories/Bluetooth Earbuds.jpg",
+      "description": "Wireless earbuds with noise isolation."
+    },
+    {
+      "id": 10,
+      "name": "Leather Gloves",
+      "material": "Leather",
+      "original_price": 1649,
+      "discount_percentage": 68,
+      "price": 528,
+      "image": "data:image/jpeg;base64,...",
+      "description": "Warm leather gloves suitable for winter riding."
+    },
+    {
+      "id": 11,
+      "name": "Metal Bracelet",
+      "material": "Stainless Steel",
+      "original_price": 749,
+      "discount_percentage": 64,
+      "price": 270,
+      "image": "https://encrypted-tbn0.gstatic.com/...",
+      "description": "Minimal stainless steel bracelet for daily wear."
+    },
+    {
+      "id": 12,
+      "name": "Laptop Sleeve",
+      "material": "Neoprene",
+      "original_price": 1349,
+      "discount_percentage": 61,
+      "price": 526,
+      "image": "data:image/jpeg;base64,...",
+      "description": "Protective laptop sleeve with soft inner lining."
+    },
+    {
+      "id": 13,
+      "name": "Travel Duffel Bag",
+      "material": "Polyester",
+      "original_price": 3299,
+      "discount_percentage": 69,
+      "price": 1023,
+      "image": "data:image/jpeg;base64,...",
+      "description": "Lightweight duffel bag perfect for short trips."
+    },
+    {
+      "id": 14,
+      "name": "Analog Alarm Clock",
+      "material": "Plastic",
+      "original_price": 899,
+      "discount_percentage": 67,
+      "price": 297,
+      "image": "https://encrypted-tbn0.gstatic.com/...",
+      "description": "Classic analog clock with loud alarm."
+    },
+    {
+      "id": 15,
+      "name": "Sunglasses Case",
+      "material": "Hard Plastic",
+      "original_price": 449,
+      "discount_percentage": 63,
+      "price": 166,
+      "image": "data:image/jpeg;base64,...",
+      "description": "Hard case to protect sunglasses from damage."
+    },
+    {
+      "id": 16,
+      "name": "Phone Holder Stand",
+      "material": "ABS Plastic",
+      "original_price": 524,
+      "discount_percentage": 60,
+      "price": 210,
+      "image": "data:image/jpeg;base64,...",
+      "description": "Adjustable phone stand for desk use."
+    },
+    {
+      "id": 17,
+      "name": "Gym Wrist Wraps",
+      "material": "Elastic Cotton",
+      "original_price": 749,
+      "discount_percentage": 65,
+      "price": 262,
+      "image": "data:image/jpeg;base64,...",
+      "description": "Supportive wrist wraps for weight training."
+    },
+    {
+      "id": 18,
+      "name": "Leather Card Holder",
+      "material": "Leather",
+      "original_price": 824,
+      "discount_percentage": 68,
+      "price": 264,
+      "image": "https://encrypted-tbn0.gstatic.com/...",
+      "description": "Slim card holder with minimalist design."
+    },
+    {
+      "id": 19,
+      "name": "Winter Wool Scarf",
+      "material": "Wool",
+      "original_price": 1199,
+      "discount_percentage": 70,
+      "price": 360,
+      "image": "https://encrypted-tbn0.gstatic.com/...",
+      "description": "Soft wool scarf for cold weather."
+    },
+    {
+      "id": 20,
+      "name": "Reusable Water Bottle",
+      "material": "Stainless Steel",
+      "original_price": 1499,
+      "discount_percentage": 62,
+      "price": 570,
+      "image": "data:image/jpeg;base64,...",
+      "description": "Insulated steel bottle keeps drinks hot or cold."
+    }
+  ],
+  "ladiesFashion": [
+    {
+      "id": 1,
+      "name": "Floral Kurti",
+      "original_price": 1949,
+      "discount_percentage": 66,
+      "price": 663,
+      "image": "assests/photos/ladiesFashion/Floral Kurti.jpg",
+      "fabric": "Cotton",
+      "description": "Lightweight floral printed cotton kurti for daily wear."
+    },
+    {
+      "id": 2,
+      "name": "Anarkali Dress",
+      "original_price": 3749,
+      "discount_percentage": 69,
+      "price": 1162,
+      "image": "assests/photos/ladiesFashion/Anarkali Dress.jpg",
+      "fabric": "Georgette",
+      "description": "Elegant Anarkali dress suitable for festive occasions."
+    },
+    {
+      "id": 3,
+      "name": "Denim Jacket",
+      "original_price": 2999,
+      "discount_percentage": 61,
+      "price": 1170,
+      "image": "assests/photos/ladiesFashion/Denim Jacket.jpg",
+      "fabric": "Denim",
+      "description": "Stylish denim jacket for casual outfits."
+    },
+    {
+      "id": 4,
+      "name": "Printed Saree",
+      "original_price": 4499,
+      "discount_percentage": 64,
+      "price": 1620,
+      "image": "assests/photos/ladiesFashion/Printed Saree.jpg",
+      "fabric": "Silk Blend",
+      "description": "Beautiful printed saree with smooth silk blend fabric."
+    },
+    {
+      "id": 5,
+      "name": "Palazzo Pants",
+      "original_price": 1499,
+      "discount_percentage": 67,
+      "price": 495,
+      "image": "assests/photos/ladiesFashion/Palazzo Pants.jpg",
+      "fabric": "Rayon",
+      "description": "Comfortable wide-leg palazzo pants for daily use."
+    },
+    {
+      "id": 6,
+      "name": "Crop Top",
+      "original_price": 1199,
+      "discount_percentage": 62,
+      "price": 456,
+      "image": "assests/photos/ladiesFashion/Crop Top.jpg",
+      "fabric": "Polyester",
+      "description": "Trendy crop top for casual and party wear."
+    },
+    {
+      "id": 7,
+      "name": "Long Skirt",
+      "original_price": 2249,
+      "discount_percentage": 70,
+      "price": 675,
+      "image": "assests/photos/ladiesFashion/Long Skirt.jpg",
+      "fabric": "Cotton Blend",
+      "description": "Flowy long skirt with a comfortable cotton blend."
+    },
+    {
+      "id": 8,
+      "name": "Formal Blazer",
+      "original_price": 4199,
+      "discount_percentage": 65,
+      "price": 1470,
+      "image": "assests/photos/ladiesFashion/Formal Blazer.jpg",
+      "fabric": "Wool Blend",
+      "description": "Smart formal blazer suitable for office wear."
+    },
+    {
+      "id": 9,
+      "name": "Party Gown",
+      "original_price": 5999,
+      "discount_percentage": 63,
+      "price": 2220,
+      "image": "assests/photos/ladiesFashion/Party Gown.jpg",
+      "fabric": "Net",
+      "description": "Stylish party gown with modern design."
+    },
+    {
+      "id": 10,
+      "name": "Casual T-Shirt",
+      "original_price": 899,
+      "discount_percentage": 68,
+      "price": 288,
+      "image": "assests/photos/ladiesFashion/Casual T-Shirt.jpg",
+      "fabric": "Cotton",
+      "description": "Soft cotton t-shirt for everyday casual wear."
+    }
+  ],
+  "perfumes": [
+    {
+      "id": 1,
+      "name": "Dior Sauvage",
+      "brand": "Dior",
+      "original_price": 11999,
+      "discount_percentage": 60,
+      "price": 4800,
+      "gender": "Men",
+      "size": "100ml",
+      "notes": "Bergamot, Pepper, Ambroxan",
+      "image": "assests/photos/perfumes/Dior Sauvage.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chanel Bleu",
+      "brand": "Chanel",
+      "original_price": 13499,
+      "discount_percentage": 67,
+      "price": 4455,
+      "gender": "Men",
+      "size": "100ml",
+      "notes": "Citrus, Incense, Sandalwood",
+      "image": "assests/photos/perfumes/Chanel Bleu.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Versace Eros",
+      "brand": "Versace",
+      "original_price": 11249,
+      "discount_percentage": 64,
+      "price": 4050,
+      "gender": "Men",
+      "size": "100ml",
+      "notes": "Mint, Vanilla, Apple",
+      "image": "assests/photos/perfumes/Versace Eros.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Armani Acqua Di Gio",
+      "brand": "Giorgio Armani",
+      "original_price": 12449,
+      "discount_percentage": 61,
+      "price": 4855,
+      "gender": "Men",
+      "size": "100ml",
+      "notes": "Marine, Bergamot, Jasmine",
+      "image": "assests/photos/perfumes/Armani Acqua Di Gio.jpg"
+    },
+    {
+      "id": 5,
+      "name": "YSL Black Opium",
+      "brand": "Yves Saint Laurent",
+      "original_price": 12899,
+      "discount_percentage": 70,
+      "price": 3870,
+      "gender": "Women",
+      "size": "90ml",
+      "notes": "Coffee, Vanilla, White Flowers",
+      "image": "assests/photos/perfumes/YSL Black Opium.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Gucci Bloom",
+      "brand": "Gucci",
+      "original_price": 11999,
+      "discount_percentage": 65,
+      "price": 4200,
+      "gender": "Women",
+      "size": "100ml",
+      "notes": "Jasmine, Tuberose, Rangoon Creeper",
+      "image": "assests/photos/perfumes/Gucci Bloom.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Carolina Herrera Good Girl",
+      "brand": "Carolina Herrera",
+      "original_price": 13199,
+      "discount_percentage": 68,
+      "price": 4224,
+      "gender": "Women",
+      "size": "80ml",
+      "notes": "Almond, Coffee, Cocoa",
+      "image": "assests/photos/perfumes/Carolina Herrera Good Girl.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Tom Ford Black Orchid",
+      "brand": "Tom Ford",
+      "original_price": 14999,
+      "discount_percentage": 62,
+      "price": 5700,
+      "gender": "Unisex",
+      "size": "100ml",
+      "notes": "Black Truffle, Orchid, Patchouli",
+      "image": "assests/photos/perfumes/Tom Ford Black Orchid.jpg"
+    },
+    {
+      "id": 9,
+      "name": "CK One",
+      "brand": "Calvin Klein",
+      "original_price": 7499,
+      "discount_percentage": 66,
+      "price": 2550,
+      "gender": "Unisex",
+      "size": "100ml",
+      "notes": "Green Tea, Citrus, Musk",
+      "image": "assests/photos/perfumes/CK One.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Lattafa Asad",
+      "brand": "Lattafa",
+      "original_price": 4499,
+      "discount_percentage": 63,
+      "price": 1665,
+      "gender": "Men",
+      "size": "100ml",
+      "notes": "Vanilla, Amber, Spices",
+      "image": "assests/photos/perfumes/Lattafa Asad.jpg"
+    }
+  ],
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Classic White Sneakers",
+      "brand": "Urban Walk",
+      "original_price": 2999,
+      "discount_percentage": 65,
+      "price": 1050,
+      "category": "Men",
+      "material": "Synthetic Leather",
+      "image": "assests/photos/shoes/Classic White Sneakers.jpg",
+      "description": "Minimal white sneakers suitable for daily casual wear."
+    },
+    {
+      "id": 2,
+      "name": "Black Running Shoes",
+      "brand": "SpeedX",
+      "original_price": 3749,
+      "discount_percentage": 61,
+      "price": 1462,
+      "category": "Men",
+      "material": "Mesh",
+      "image": "assests/photos/shoes/Black Running Shoes.jpg",
+      "description": "Lightweight running shoes with breathable mesh upper."
+    },
+    {
+      "id": 3,
+      "name": "Formal Oxford Shoes",
+      "brand": "Elite Step",
+      "original_price": 4499,
+      "discount_percentage": 68,
+      "price": 1440,
+      "category": "Men",
+      "material": "Genuine Leather",
+      "image": "assests/photos/shoes/Formal Oxford Shoes.jpg",
+      "description": "Classic brown leather oxfords ideal for office and formal events."
+    },
+    {
+      "id": 4,
+      "name": "Casual Slip-On Loafers",
+      "brand": "Comfort Walk",
+      "original_price": 2699,
+      "discount_percentage": 62,
+      "price": 1026,
+      "category": "Men",
+      "material": "Suede",
+      "image": "assests/photos/shoes/Casual Slip-On Loafers.jpg",
+      "description": "Soft suede loafers with slip-on design for everyday comfort."
+    },
+    {
+      "id": 5,
+      "name": "High Top Street Sneakers",
+      "brand": "StreetOne",
+      "original_price": 3899,
+      "discount_percentage": 69,
+      "price": 1209,
+      "category": "Unisex",
+      "material": "Canvas",
+      "image": "assests/photos/shoes/High Top Street Sneakers.jpg",
+      "description": "Trendy high-top sneakers with padded ankle support."
+    },
+    {
+      "id": 6,
+      "name": "Women’s Block Heel Sandals",
+      "brand": "Bella Mode",
+      "original_price": 3299,
+      "discount_percentage": 64,
+      "price": 1188,
+      "category": "Women",
+      "material": "Synthetic",
+      "image": "assests/photos/shoes/Womens Block Heel Sandals.jpg",
+      "description": "Elegant block heel sandals suitable for parties and festive wear."
+    },
+    {
+      "id": 7,
+      "name": "Women’s Ballerina Flats",
+      "brand": "SoftSteps",
+      "original_price": 1949,
+      "discount_percentage": 67,
+      "price": 643,
+      "category": "Women",
+      "material": "PU",
+      "image": "assests/photos/shoes/Womens Ballerina Flats.jpg",
+      "description": "Comfortable ballerina flats with cushioned insole for all-day use."
+    },
+    {
+      "id": 8,
+      "name": "Outdoor Trekking Shoes",
+      "brand": "Trail Pro",
+      "original_price": 5249,
+      "discount_percentage": 70,
+      "price": 1575,
+      "category": "Unisex",
+      "material": "Synthetic + Rubber",
+      "image": "assests/photos/shoes/Outdoor Trekking Shoes.jpg",
+      "description": "Rugged trekking shoes with strong grip for outdoor adventures."
+    },
+    {
+      "id": 9,
+      "name": "Kids Sporty Sneakers",
+      "brand": "MiniRun",
+      "original_price": 2249,
+      "discount_percentage": 63,
+      "price": 832,
+      "category": "Kids",
+      "material": "Mesh",
+      "image": "assests/photos/shoes/Kids Sporty Sneakers.jpg",
+      "description": "Lightweight sneakers for kids with flexible sole and velcro strap."
+    },
+    {
+      "id": 10,
+      "name": "Leather Office Sandals",
+      "brand": "FormalEase",
+      "original_price": 2849,
+      "discount_percentage": 66,
+      "price": 969,
+      "category": "Men",
+      "material": "Leather",
+      "image": "assests/photos/shoes/Leather Office Sandals.jpg",
+      "description": "Open-toe leather sandals designed for formal and semi-formal use."
+    }
+  ],
+
+  "mobiles": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro",
+      "brand": "Apple",
+      "original_price": 134900,
+      "discount_percentage": 12,
+      "price": 118712,
+      "specs": "A17 Pro Chip, 48MP Camera, Titanium Design",
+      "image": "assests/photos/mobiles/iPhone 15 Pro.jpg",
+      "description": "The ultimate iPhone with aerospace-grade titanium."
+    },
+    {
+      "id": 2,
+      "name": "Galaxy S23 Ultra",
+      "brand": "Samsung",
+      "original_price": 124999,
+      "discount_percentage": 15,
+      "price": 106249,
+      "specs": "Snapdragon 8 Gen 2, 200MP Camera, S-Pen included",
+      "image": "assests/photos/mobiles/Galaxy S23 Ultra.jpg",
+      "description": "Our most advanced camera and fastest gaming processor."
+    },
+    {
+      "id": 3,
+      "name": "Pixel 8 Pro",
+      "brand": "Google",
+      "original_price": 106999,
+      "discount_percentage": 11,
+      "price": 95229,
+      "specs": "Google Tensor G3, AI Magic Eraser, Super Actua Display",
+      "image": "assests/photos/mobiles/Pixel 8 Pro.jpg",
+      "description": "The best of Google AI on a mobile phone."
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 12",
+      "brand": "OnePlus",
+      "original_price": 64999,
+      "discount_percentage": 14,
+      "price": 55899,
+      "specs": "Snapdragon 8 Gen 3, Hasselblad Camera, 100W Charging",
+      "image": "assests/photos/mobiles/OnePlus 12.jpg",
+      "description": "Smooth beyond belief with elite performance."
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi 14 Ultra",
+      "brand": "Xiaomi",
+      "original_price": 99999,
+      "discount_percentage": 10,
+      "price": 89999,
+      "specs": "Leica Optical Lens, Snapdragon 8 Gen 3",
+      "image": "assests/photos/mobiles/Xiaomi 14 Ultra.jpg",
+      "description": "A professional camera in your pocket."
+    },
+    {
+      "id": 6,
+      "name": "Nothing Phone (2)",
+      "brand": "Nothing",
+      "original_price": 44999,
+      "discount_percentage": 13,
+      "price": 39149,
+      "specs": "Glyph Interface, Snapdragon 8+ Gen 1, Nothing OS",
+      "image": "assests/photos/mobiles/Nothing Phone (2).jpg",
+      "description": "A new way to interact with your smartphone."
+    },
+    {
+      "id": 7,
+      "name": "iPhone 14",
+      "brand": "Apple",
+      "original_price": 69900,
+      "discount_percentage": 15,
+      "price": 59415,
+      "specs": "A15 Bionic, Dual Camera System, FaceID",
+      "image": "assests/photos/mobiles/iPhone 14.jpg",
+      "description": "Powerful and reliable with a stunning OLED display."
+    },
+    {
+      "id": 8,
+      "name": "Galaxy Z Fold 5",
+      "brand": "Samsung",
+      "original_price": 154999,
+      "discount_percentage": 12,
+      "price": 136399,
+      "specs": "7.6-inch Main Screen, Multi-tasking powerhouse",
+      "image": "assests/photos/mobiles/Galaxy Z Fold 5.jpg",
+      "description": "A massive screen for cinema-like viewing and gaming."
+    },
+    {
+      "id": 10,
+      "name": "Realme GT 5",
+      "brand": "Realme",
+      "original_price": 38999,
+      "discount_percentage": 14,
+      "price": 33539,
+      "specs": "240W Fast Charging, Snapdragon 8 Gen 2",
+      "image": "assests/photos/mobiles/Realme GT 5.jpg",
+      "description": "The speed king with ultra-fast charging capabilities."
+    },
+    {
+      "id": 11,
+      "name": "Vivo X100 Pro",
+      "brand": "Vivo",
+      "original_price": 89999,
+      "discount_percentage": 11,
+      "price": 80099,
+      "specs": "ZEISS Co-engineered, Dimensity 9300",
+      "image": "assests/photos/mobiles/Vivo X100 Pro.jpg",
+      "description": "Photography redefined with ZEISS optics."
+    },
+    {
+      "id": 12,
+      "name": "Poco F5",
+      "brand": "Poco",
+      "original_price": 34999,
+      "discount_percentage": 15,
+      "price": 29749,
+      "specs": "Snapdragon 7+ Gen 2, 12-bit Flow AMOLED",
+      "image": "assests/photos/mobiles/Poco F5.jpg",
+      "description": "Flagship-level performance for gaming enthusiasts."
+    },
+    {
+      "id": 13,
+      "name": "iQOO 12",
+      "brand": "iQOO",
+      "original_price": 52999,
+      "discount_percentage": 10,
+      "price": 47699,
+      "specs": "Snapdragon 8 Gen 3, Q1 Gaming Chip",
+      "image": "assests/photos/mobiles/iQOO 12.jpg",
+      "description": "Unmatched performance with premium aesthetics."
+    },
+    {
+      "id": 14,
+      "name": "Oppo Reno 11 Pro",
+      "brand": "Oppo",
+      "original_price": 39999,
+      "discount_percentage": 12,
+      "price": 35199,
+      "specs": "Portrait Expert Engine, 80W SUPERVOOC",
+      "image": "assests/photos/mobiles/Oppo Reno 11 Pro.jpg",
+      "description": "The portrait expert with a beautiful design."
+    },
+    {
+      "id": 15,
+      "name": "Asus ROG Phone 8",
+      "brand": "Asus",
+      "original_price": 94999,
+      "discount_percentage": 13,
+      "price": 82649,
+      "specs": "AeroActive Cooler, AirTriggers, 165Hz Display",
+      "image": "assests/photos/mobiles/Asus ROG Phone 8.jpg",
+      "description": "The ultimate gaming machine for pro players."
+    }
+  ],
+"laptops": [
+    {
+      "id": 101,
+      "name": "MacBook Air M3",
+      "brand": "Apple",
+      "original_price": 114900,
+      "discount_percentage": 10,
+      "price": 103410,
+      "specs": "Apple M3 Chip, 8GB Unified Memory, 256GB SSD",
+      "image": "assests/photos/laptops/MacBook Air M3.jpg",
+      "description": "Strikingly thin and fast so you can work, play, or create anywhere."
+    },
+    {
+      "id": 102,
+      "name": "Dell XPS 13",
+      "brand": "Dell",
+      "original_price": 135990,
+      "discount_percentage": 15,
+      "price": 115591,
+      "specs": "Intel Core i7 13th Gen, 16GB RAM, 512GB SSD",
+      "image": "assests/photos/laptops/Dell XPS 13.jpg",
+      "description": "The smallest 13-inch laptop with a boundary-pushing InfinityEdge display."
+    },
+    {
+      "id": 103,
+      "name": "HP Spectre x360",
+      "brand": "HP",
+      "original_price": 165000,
+      "discount_percentage": 12,
+      "price": 145200,
+      "specs": "Intel Core i7 Ultra, 2-in-1 Touchscreen, OLED Display",
+      "image": "assests/photos/laptops/HP Spectre x360.jpg",
+      "description": "Premium 2-in-1 laptop with a stunning 360-degree hinge design."
+    },
+    {
+      "id": 104,
+      "name": "ASUS ROG Zephyrus G14",
+      "brand": "Asus",
+      "original_price": 149990,
+      "discount_percentage": 14,
+      "price": 128991,
+      "specs": "Ryzen 9, RTX 4060, 16GB RAM, 120Hz Nebula Display",
+      "image": "assests/photos/laptops/ASUS ROG Zephyrus G14.jpg",
+      "description": "Compact yet incredibly powerful gaming machine for pros."
+    },
+    {
+      "id": 105,
+      "name": "Lenovo Yoga Slim 7i",
+      "brand": "Lenovo",
+      "original_price": 84990,
+      "discount_percentage": 11,
+      "price": 75641,
+      "specs": "Intel Core i5 13th Gen, 16GB RAM, 512GB SSD",
+      "image": "assests/photos/laptops/Lenovo Yoga Slim 7i.jpg",
+      "description": "Engineered for elite mobile performance and long battery life."
+    },
+    {
+      "id": 106,
+      "name": "Microsoft Surface Laptop 5",
+      "brand": "Microsoft",
+      "original_price": 102990,
+      "discount_percentage": 13,
+      "price": 89601,
+      "specs": "PixelSense Touchscreen, Intel Core i5, Alcantara Keyboard",
+      "image": "assests/photos/laptops/Microsoft Surface Laptop 5.jpg",
+      "description": "Sleek, portable, and perfect for the modern professional."
+    },
+    {
+      "id": 107,
+      "name": "Acer Predator Helios Neo 16",
+      "brand": "Acer",
+      "original_price": 119999,
+      "discount_percentage": 15,
+      "price": 101999,
+      "specs": "Intel Core i7, RTX 4050, 16GB RAM, 165Hz Display",
+      "image": "assests/photos/laptops/Acer Predator Helios Neo 16.jpg",
+      "description": "High-octane gaming performance with superior cooling technology."
+    },
+    {
+      "id": 108,
+      "name": "Samsung Galaxy Book4 Pro",
+      "brand": "Samsung",
+      "original_price": 159990,
+      "discount_percentage": 10,
+      "price": 143991,
+      "specs": "Intel Core Ultra 7, Dynamic AMOLED 2X, Galaxy Ecosystem",
+      "image": "assests/photos/laptops/Samsung Galaxy Book4 Pro.jpg",
+      "description": "Powerful PC experience that connects seamlessly with your Galaxy devices."
+    },
+    {
+      "id": 109,
+      "name": "MSI Katana 15",
+      "brand": "MSI",
+      "original_price": 89990,
+      "discount_percentage": 12,
+      "price": 79191,
+      "specs": "Intel Core i7 12th Gen, RTX 4050, 144Hz Refresh Rate",
+      "image": "assests/photos/laptops/MSI Katana 15.jpg",
+      "description": "Sharpen your game with the ultimate performance and sleek design."
+    },
+    {
+      "id": 110,
+      "name": "LG Gram 16",
+      "brand": "LG",
+      "original_price": 95000,
+      "discount_percentage": 14,
+      "price": 81700,
+      "specs": "Ultra-light 1.1kg, 16GB RAM, 512GB SSD",
+      "image": "assests/photos/laptops/LG Gram 16.jpg",
+      "description": "Incredibly lightweight and powerful for unmatched productivity on the go."
+    }
+  ]
+}

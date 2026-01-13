@@ -1,0 +1,41 @@
+<h2>Your Cart</h2>
+
+@if (cartItem.length > 0) {
+
+<div class="cart-container">
+
+    @for (item of cartItem; track $index) {
+
+    <div class="cart-item">
+
+        <img [src]="item.image" [alt]="item.name" class="cart-img" />
+
+        <div class="cart-info">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.price | currency: "INR" }}</p>
+
+            <div class="quantity-box">
+                <button (click)="increase(item)" style="color:#5791e2">+</button>
+                <span>{{ item.quantity }}</span>
+                <button (click)="decrease(item)" style="color: #f85252;">-</button>
+            </div>
+
+            <button class="remove-btn" (click)="remove(item.id)">Remove</button>
+        </div>
+
+    </div>
+
+    }
+
+</div>
+
+<div class="buySection">
+<h3>Total: {{ total | currency: "INR" }}</h3>
+<button (click)="onCheckOut()">Buy</button>
+</div>
+} @else {
+
+<div class="empty" style="width: 100%; height:600px; background-color:grey">
+    <p> Your Cart is Empty</p>
+</div>
+}

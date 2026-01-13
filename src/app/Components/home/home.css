@@ -1,0 +1,292 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f1f3f6;
+  perspective: 1200px;
+}
+
+/* ================= HEADER ================= */
+.main-header {
+  background: linear-gradient(135deg, #e6ebf0, #7daae1);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  /* z-index: 100; */
+  /* box-shadow: 0 8px 25px rgba(0,0,0,0.4); */
+}
+
+
+.main-header img {
+  height: 90px;
+  width: auto;
+}
+
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 8%;
+  background: linear-gradient(145deg, #ffffff, #e6e9ef);
+  transform-style: preserve-3d;
+}
+
+.hero-text {
+  max-width: 520px;
+  animation: slideInLeft 1.2s ease forwards;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.hero-text p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  padding: 14px 34px;
+  background: linear-gradient(145deg, #ff9900, #ff7b00);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(255, 153, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-text button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(255, 153, 0, 0.6);
+}
+
+.hero-image img {
+  width: 480px;
+  border-radius: 25px;
+  transform: rotateY(-8deg) translateZ(40px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ================= CATEGORIES ================= */
+.categories {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 34px;
+  margin-bottom: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.category-cards {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.category-card {
+  width: 260px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  padding: 18px;
+  background: #fff;
+  transform: translateZ(30px);
+}
+
+.category-card:hover {
+  transform: rotateX(8deg) rotateY(-8deg) translateY(-15px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= PROMOTIONS ================= */
+.promotions {
+  padding: 80px 8%;
+  background: linear-gradient(145deg, #f8f8f8, #eaeaea);
+  text-align: center;
+}
+
+.promotions h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.promo-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.promo-card {
+  width: 340px;
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.promo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.promo-card p {
+  padding: 20px;
+  font-weight: 600;
+  transform: translateZ(25px);
+}
+
+.promo-card:hover {
+  transform: translateY(-15px) rotateX(6deg);
+}
+
+/* ================= NEWSLETTER ================= */
+.newsletter {
+  padding: 90px 8%;
+  background: linear-gradient(145deg, #131921, #0f1111);
+  color: #fff;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.newsletter input {
+  padding: 14px;
+  width: 280px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-right: 12px;
+}
+
+.newsletter button {
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #ff9900, #ff7b00);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(255, 153, 0, 0.5);
+  transition: transform 0.4s;
+}
+
+.newsletter button:hover {
+  transform: scale(1.1);
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotateY(-8deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotateY(-8deg);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE ================= */
+
+/* -------- LARGE TABLETS / SMALL LAPTOPS -------- */
+@media (max-width: 1200px) {
+  .hero {
+    padding: 70px 6%;
+  }
+
+  .hero-image img {
+    width: 420px;
+  }
+
+  .category-cards,
+  .promo-cards {
+    gap: 25px;
+  }
+}
+
+/* -------- TABLETS -------- */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-image img {
+    width: 380px;
+    transform: none;
+  }
+
+  .category-cards,
+  .promo-cards {
+    flex-wrap: wrap;
+  }
+
+  .category-card,
+  .promo-card {
+    width: 45%;
+  }
+}

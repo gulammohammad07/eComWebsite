@@ -1,0 +1,36 @@
+import { Routes } from '@angular/router';
+import { Acessories } from './Components/acessories/acessories';
+import { BuyComponent } from './Components/buy-component/buy-component';
+import { Carts } from './Components/carts.component/carts';
+import { Fashion } from './Components/fashion/fashion';
+import { Header } from './Components/header/header';
+import { Home } from './Components/home/home';
+import { LadiesFashions } from './Components/ladies-fashions/ladies-fashions';
+import { LaptopComponent } from './Components/laptop-component/laptop-component';
+import { MobileComponent } from './Components/mobile-component/mobile-component';
+import { OrderShow } from './Components/order-show/order-show';
+import { PageNotFound } from './Components/page-not-found/page-not-found';
+import { Perfumes } from './Components/perfumes/perfumes';
+import { PipeComponent } from './Components/pipe-component/pipe-component';
+import { SearchPageComponent } from './Components/search-page-component/search-page-component';
+import { ShoesComponent } from './Components/shoes-component/shoes-component';
+import { SuggestionComponent } from './Components/suggestion-component/suggestion-component';
+
+export const routes: Routes = [
+  { path: '', component: Home },
+  { path: 'header', component: Header },
+  { path: 'fashion', component: Fashion },
+  { path: 'acessories', component: Acessories },
+  { path: 'carts', component: Carts },
+  { path: 'shoes', component: ShoesComponent },
+  { path: 'perfumes', component: Perfumes },
+  { path: 'ladies-fashions', component: LadiesFashions },
+  { path: 'mobile', component: MobileComponent },
+  { path: 'laptop', component: LaptopComponent },
+  { path: 'search', component: SearchPageComponent },
+  { path: 'buy', component: BuyComponent },
+  { path: 'order', component: OrderShow },
+  { path: 'suggestion', component: SuggestionComponent },
+  { path: 'pipe', component: PipeComponent },
+  { path: '**', component: PageNotFound },
+];

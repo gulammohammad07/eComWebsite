@@ -1,0 +1,73 @@
+
+
+<div class="nav">
+    <a routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">HOME</a>
+    <a routerLink="fashion" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">FASHION</a>
+    <a routerLink="acessories" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">ACCESSORIES</a>
+    <a routerLink="shoes" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">SHOES</a>
+    <a routerLink="ladies-fashions" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">WOMEN FASHIONS</a>
+    <a routerLink="perfumes" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">PERFUMES</a>
+    <a routerLink="mobile" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">MOBILES</a>
+    <a routerLink="laptop" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">LAPTOP</a>
+    <!-- <a routerLink="electronics" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">ELECTRONICS</a> -->
+    <li>
+
+        <input type="text" name="search" class="search" [formControl]="searchBar"
+            placeholder="Search for products, brands and more" (keydown.enter)="onSearch()">
+        <button (click)="onSearch()" (keypress)="onSearch()" >Search</button>
+    </li>
+    <a routerLink="carts" class="cartLink"> <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path fill="#74C0FC"
+                d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z" />
+        </svg>CART {{totalCart}} </a>
+
+        <a routerLink="order">Orders</a>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="footer-page">
+
+    <ul>
+        <li><strong>Get To Know</strong></li>
+        <li> About E-com</li>
+        <li>Services</li>
+        <li>Press Releases</li>
+        <li>E-com Science</li>
+    </ul>
+
+
+    <ul>
+        <li><strong>Connect with Us </strong></li>
+        <li>Facebook </li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+    </ul>
+
+
+    <ul>
+        <li><strong> Make Money with Us </strong></li>
+        <li>Sell on E-com</li>
+        <li>Sell under E-com Accelerator</li>
+        <li>Protect and Build Your Brand</li>
+        <li>E-com Global Selling</li>
+        <li>Supply to E-com</li>
+        <li>Become an Affiliate</li>
+        <li>Fulfilment by E-com</li>
+        <li>Advertise Your Products</li>
+        <li>E-com Pay on Merchants</li>
+    </ul>
+
+
+    <ul>
+        <li> <strong> Let Us Help You </strong></li>
+        <li>Your Account</li>
+        <li>Returns Centre</li>
+        <li>Recalls and Product Safety Alerts</li>
+        <li>100% Purchase Protection</li>
+        <li>E-com App Download</li>
+        <li>Help</li>
+    </ul>
+
+</div>
