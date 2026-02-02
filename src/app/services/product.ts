@@ -9,37 +9,37 @@ import { map } from 'rxjs/operators';
 export class Product {
   constructor(private http: HttpClient) {}
   fashionApi() {
-    const url = 'http://https://remarkable-arithmetic-499f75.netlify.app/fashion';
+    const url = 'http://localhost:3000/fashion';
     return this.http.get(url);
   }
 
   accessoriesApi() {
-    const url = 'http://https://remarkable-arithmetic-499f75.netlify.app/accessories';
+    const url = 'http://localhost:3000/accessories';
     return this.http.get(url);
   }
 
   ladiesFashionApi() {
-    const url = 'http://https://remarkable-arithmetic-499f75.netlify.app/ladiesFashion';
+    const url = 'http://localhost:3000/ladiesFashion';
     return this.http.get(url);
   }
 
   perfumeApi() {
-    const url = 'http://https://remarkable-arithmetic-499f75.netlify.app/perfumes';
+    const url = 'http://localhost:3000/perfumes';
     return this.http.get(url);
   }
 
   shoesApi() {
-    const url = 'http://https://remarkable-arithmetic-499f75.netlify.app/shoes';
+    const url = 'http://localhost:3000/shoes';
     return this.http.get(url);
   }
 
   mobileApi() {
-    const url = 'http://https://remarkable-arithmetic-499f75.netlify.app/mobiles';
+    const url = 'http://localhost:3000/mobiles';
     return this.http.get(url);
   }
 
   laptopApi() {
-    const url = 'http://https://remarkable-arithmetic-499f75.netlify.app/laptops';
+    const url = 'http://localhost:3000/laptops';
     return this.http.get(url);
   }
 
@@ -50,13 +50,13 @@ export class Product {
     }
 
     return forkJoin({
-      fashion: this.http.get<any[]>(`http://https://remarkable-arithmetic-499f75.netlify.app/fashion?name_like=${q}`),
-      accessories: this.http.get<any[]>(`http://https://remarkable-arithmetic-499f75.netlify.app/accessories?name_like=${q}`),
-      ladies: this.http.get<any[]>(`http://https://remarkable-arithmetic-499f75.netlify.app/ladiesFashion?name_like=${q}`),
-      perfume: this.http.get<any[]>(`http://https://remarkable-arithmetic-499f75.netlify.app/perfumes?name_like=${q}`),
-      shoes: this.http.get<any[]>(`http://https://remarkable-arithmetic-499f75.netlify.app/shoes?name_like=${q}`),
-      mobile: this.http.get<any[]>(`http://https://remarkable-arithmetic-499f75.netlify.app/mobile?name_like=${q}`),
-      laptop: this.http.get<any[]>(`http://https://remarkable-arithmetic-499f75.netlify.app/laptop?name_like=${q}`),
+      fashion: this.http.get<any[]>(`http://localhost:3000/fashion?name_like=${q}`),
+      accessories: this.http.get<any[]>(`http://localhost:3000/accessories?name_like=${q}`),
+      ladies: this.http.get<any[]>(`http://localhost:3000/ladiesFashion?name_like=${q}`),
+      perfume: this.http.get<any[]>(`http://localhost:3000/perfumes?name_like=${q}`),
+      shoes: this.http.get<any[]>(`http://localhost:3000/shoes?name_like=${q}`),
+      mobile: this.http.get<any[]>(`http://localhost:3000/mobile?name_like=${q}`),
+      laptop: this.http.get<any[]>(`http://localhost:3000/laptop?name_like=${q}`),
     }).pipe(
       map((res: any) => [
         ...(res.fashion || []),
